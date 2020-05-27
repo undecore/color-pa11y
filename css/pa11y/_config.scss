@@ -1,0 +1,27 @@
+/*
+
+  CONFIGURATION FILE
+  ---
+
+  This is the Pa11y's configuration file.
+  Here you can paste the code you copied from the website.
+
+  --
+
+  The variations represented here below are the possible
+  visible colours of the rainbow spectrum.
+
+  We are using the HSL format to demonstrate how colors
+  change from the chromatic wheel from 0° to 360°
+*/
+
+$pa11y-body-background: #f0f0f0;
+$pa11y-body-text-color: #282828;
+
+$pa11y-red:     hsl(10, 80%, 50%);
+$pa11y-orange:  hsl(40, 80%, 50%); // orange, salmon,
+$pa11y-yellow:  hsl(60, 80%, 50%); // yellow, gold, palegoldenrod, wheat;
+$pa11y-green:   hsl(160, 60%, 50%);
+$pa11y-blue:    hsl(200, 60%, 50%);
+$pa11y-purple:  hsl(260, 40%, 50%);
+$pa11y-violet:  hsl(320, 40%, 50%);

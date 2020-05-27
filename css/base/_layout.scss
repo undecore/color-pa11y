@@ -1,0 +1,27 @@
+body > section {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  place-content: center;
+  border: .25rem solid $pa11y-body-text-color;
+  margin-bottom: 2rem;
+}
+
+.container {
+
+  width: 100%;
+  max-width: 64rem;
+  padding: 0 1rem;
+
+  & > header {
+    margin: 2rem 0;
+  }
+
+}
+
+// @media (prefers-color-scheme: dark) {
+//   body {
+//     color: $pa11y-body-background;
+//     background-color: $pa11y-body-text-color;
+//   }
+// }

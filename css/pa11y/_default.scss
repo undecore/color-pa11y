@@ -1,0 +1,37 @@
+@import 'config';
+@import 'patterns';
+
+.pa11y {
+
+  background-size: $pa11y-pttrn-size !important;
+
+  &.red {
+    background: $pa11y-red-pttrn;
+    background-color: $pa11y-red;
+  }
+  &.orange {
+    background: $pa11y-orange-pttrn;
+    background-color: $pa11y-orange;
+  }
+  &.yellow {
+    background: $pa11y-yellow-pttrn;
+    background-color: $pa11y-yellow;
+  }
+  &.green {
+    background: $pa11y-green-pttrn;
+    background-color: $pa11y-green;
+  }
+  &.blue {
+    background: $pa11y-blue-pttrn;
+    background-color: $pa11y-blue;
+  }
+  &.purple {
+    background: $pa11y-purple-pttrn;
+    background-color: $pa11y-purple;
+  }
+  &.violet {
+    background: $pa11y-violet-pttrn;
+    background-color: $pa11y-violet;
+  }
+
+}

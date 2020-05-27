@@ -1,0 +1,8 @@
+# Ignore OS files
+.DS_Store
+
+# Ignore npm dependencies folder
+node_modules
+
+# Ignore sass config
+.sass-cache

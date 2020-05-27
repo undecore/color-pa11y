@@ -1,0 +1,245 @@
+@charset "UTF-8";
+/*
+
+  CONFIGURATION FILE
+  ---
+
+  This is the Pa11y's configuration file.
+  Here you can paste the code you copied from the website.
+
+  --
+
+  The variations represented here below are the possible
+  visible colours of the rainbow spectrum.
+
+  We are using the HSL format to demonstrate how colors
+  change from the chromatic wheel from 0° to 360°
+*/
+/*
+
+  CONFIGURATION FILE
+  ---
+
+  This is the Pa11y's configuration file.
+  Here you can paste the code you copied from the website.
+
+  --
+
+  The variations represented here below are the possible
+  visible colours of the rainbow spectrum.
+
+  We are using the HSL format to demonstrate how colors
+  change from the chromatic wheel from 0° to 360°
+*/
+@import url("https://fonts.googleapis.com/css2?family=Fredoka+One&family=Red+Hat+Text:ital,wght@0,700;1,500&display=swap");
+.pa11y, #cover {
+  background-size: 1rem 1rem !important;
+}
+.pa11y.red, .red#cover {
+  background: linear-gradient(-45deg, transparent 44%, rgba(0, 0, 0, 0.2) 45%, transparent 55%) 0.5rem 0.5rem;
+  background-color: #e63c1a;
+}
+.pa11y.orange, .orange#cover {
+  background: linear-gradient(-45deg, transparent 44%, rgba(0, 0, 0, 0.2) 45%, transparent 55%) 0.5rem 0.5rem, radial-gradient(rgba(0, 0, 0, 0.2) 12%, rgba(0, 0, 0, 0) 16%) 0rem 0.5rem;
+  background-color: #e6a21a;
+}
+.pa11y.yellow, #cover {
+  background: radial-gradient(rgba(0, 0, 0, 0.2) 12%, rgba(0, 0, 0, 0) 16%) 0.5rem 0.5rem;
+  background-color: #e6e61a;
+}
+.pa11y.green, .green#cover {
+  background: radial-gradient(rgba(0, 0, 0, 0.2) 12%, rgba(0, 0, 0, 0) 16%) 1rem 1rem, linear-gradient(90deg, transparent 44%, rgba(0, 0, 0, 0.2) 45%, transparent 55%) 0.5rem 0.5rem, linear-gradient(180deg, transparent 44%, rgba(0, 0, 0, 0.2) 45%, transparent 55%) 0.5rem 0.5rem;
+  background-color: #33cc99;
+}
+.pa11y.blue, .blue#cover {
+  background: linear-gradient(90deg, transparent 44%, rgba(0, 0, 0, 0.2) 45%, transparent 55%) 0.5rem 0.5rem, linear-gradient(180deg, transparent 44%, rgba(0, 0, 0, 0.2) 45%, transparent 55%) 0.5rem 0.5rem;
+  background-color: #3399cc;
+}
+.pa11y.purple, .purple#cover {
+  background: linear-gradient(90deg, transparent 44%, rgba(0, 0, 0, 0.2) 45%, transparent 55%) 0.5rem 0.5rem, linear-gradient(180deg, transparent 44%, rgba(0, 0, 0, 0.2) 45%, transparent 55%) 0.5rem 0.5rem, linear-gradient(-45deg, transparent 44%, rgba(0, 0, 0, 0.2) 45%, transparent 55%) 1rem 1rem;
+  background-color: #6f4db3;
+}
+.pa11y.violet, .violet#cover {
+  background: linear-gradient(-45deg, transparent 44%, rgba(0, 0, 0, 0.2) 45%, transparent 55%) 1rem 1rem, linear-gradient(45deg, transparent 44%, rgba(0, 0, 0, 0.2) 45%, transparent 55%) 1rem 1rem;
+  background-color: #b34d91;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #f0f0f0;
+  color: #282828;
+}
+
+a {
+  cursor: pointer;
+}
+
+body {
+  font: normal 15px/1.5em "Red Hat text", helvetica arial, sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  line-height: 1.25em;
+}
+
+h1 {
+  font-family: "Fredoka One", helvetica arial, sans-serif;
+  font-size: 3em;
+  font-weight: 900;
+  line-height: 1em;
+  margin-bottom: 1em;
+}
+
+h2 {
+  font-weight: normal;
+  font-size: 2em;
+}
+
+a {
+  text-decoration: none;
+}
+
+section header {
+  font-size: 1.25rem;
+}
+section header h2 {
+  font-family: "Fredoka One", helvetica arial, sans-serif;
+}
+section header p {
+  font-weight: normal;
+}
+
+body > section {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  place-content: center;
+  border: 0.25rem solid #282828;
+  margin-bottom: 2rem;
+}
+
+.container {
+  width: 100%;
+  max-width: 64rem;
+  padding: 0 1rem;
+}
+.container > header {
+  margin: 2rem 0;
+}
+
+body {
+  padding: 2rem;
+  transition: background ease-in-out 1s;
+}
+
+#cover {
+  width: 100%;
+  min-height: 80vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 0.25rem solid black;
+  margin-bottom: -0.25rem;
+}
+#cover figure, #cover header {
+  width: 50%;
+  display: flex;
+  align-items: stretch;
+  justify-content: center;
+  position: relative;
+  transition: all 0.6s ease-in-out;
+}
+#cover img {
+  width: 50%;
+  height: auto;
+}
+#cover header {
+  flex-direction: column;
+  min-width: 50%;
+}
+#cover h1 {
+  text-transform: capitalize;
+  display: block;
+}
+#cover h2 {
+  max-width: 32rem;
+}
+@media screen and (max-width: 46rem) {
+  #cover {
+    flex-direction: column;
+    text-align: center;
+  }
+  #cover img {
+    width: 100%;
+    margin-bottom: 2rem;
+    transform: translateX(-1.5rem);
+  }
+}
+
+#colours .rainbow {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex: 1;
+  margin-bottom: 4rem;
+  flex-wrap: wrap;
+  border: 0.25rem solid #282828;
+}
+#colours .rainbow > .pa11y, #colours .rainbow > #cover {
+  display: block;
+  width: 6rem;
+  height: 6rem;
+  margin: 0;
+  flex-basis: 6rem;
+  flex-grow: 1;
+  position: relative;
+}
+#colours .rainbow > .pa11y pre, #colours .rainbow > #cover pre {
+  position: absolute;
+  bottom: -2rem;
+}
+
+#main-navigation {
+  height: 10vh;
+  min-height: 6.4rem;
+  text-align: center;
+  border: 0.25rem solid black;
+  margin-bottom: 2rem;
+}
+#main-navigation ul {
+  width: 100%;
+  height: 100%;
+  flex: 1;
+  display: flex;
+  align-items: stretch;
+  flex-grow: 1;
+  list-style: none;
+}
+#main-navigation li {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-grow: 1;
+}
+#main-navigation li:last-child a {
+  border-right: none;
+}
+#main-navigation a {
+  font-size: 1.25rem;
+  display: flex;
+  font-weight: bold;
+  flex: 1;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem 2rem;
+  color: black;
+  border-right: 0.25rem solid black;
+}
+
+/*# sourceMappingURL=main.css.map */

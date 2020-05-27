@@ -1,0 +1,37 @@
+{
+  "name": "colorblind-pa11y",
+  "version": "1.0.0",
+  "description": "A color blindness friendly CSS library with a11y patterns.",
+  "main": "src/index.js",
+  "scripts": {
+    "watch": "sass --style=expanded --watch ./css/main.scss:./css/main.css",
+    "compile": "echo \"compiling sass...\" && sass --style=compressed ./css/main.scss:./css/main.css",
+    "dev": "lite-server && npm run watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/undecore/colorblind-pa11y.git"
+  },
+  "keywords": [
+    "a11y",
+    "accessibility",
+    "css",
+    "sass",
+    "scss",
+    "color"
+  ],
+  "author": "@undecore",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/undecore/colorblind-pa11y/issues"
+  },
+  "homepage": "https://github.com/undecore/colorblind-pa11y#readme",
+  "dependencies": {},
+  "devDependencies": {
+    "eslint": "^6.8.0",
+    "eslint-config-airbnb-base": "^14.1.0",
+    "eslint-plugin-import": "^2.20.2",
+    "prettier": "^2.0.5",
+    "sass": "^1.26.5"
+  }
+}
