@@ -3,42 +3,42 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>A color blindness friendly CSS palette library with a11y patterns. | Colorblind Pa11y</title>
+  <title>A color blindness friendly CSS color palette library with a11y patterns. | Color Pa11y</title>
   <link rel="stylesheet" href="./css/main.css" media="screen">
 </head>
-<body>
+<body class="pa11y yellow">
 
-  <div id="cover">
+  <div id="cover" class="pa11y yellow">
     <figure>
       <img class="logo" src="./assets/pa11y.svg" alt="friendly logo with a colorfull popsicle character with meme sunglasses on the face">
     </figure>
-    <header>
-      <h1><strong>ColorBlind</strong> Pa11y</h1>
-      <h2>A color blindness friendly CSS palette library with a11y patterns.</h2>
+    <header tabindex="0">
+      <h1><strong>ColorBlind</strong> a11y Palette</h1>
+      <h2>A color blindness friendly CSS color palette library with a11y patterns.</h2>
     </header>
   </div>
 
   <nav id="main-navigation">
     <ul>
       <li>
-        <a href="#about" title="solution found">About</a>
+        <a tabindex="1" class="pa11y red" href="#about" title="solution found">About</a>
       </li>
       <li>
-        <a href="#usage" title="how to use">Usage</a>
+        <a tabindex="2" class="pa11y orange" href="#usage" title="how to use">Usage</a>
       </li>
       <li>
-        <a href="#colours" title="colours section">Colours</a>
+        <a tabindex="3" class="pa11y green" href="#colors" title="colours section">Colours</a>
       </li>
       <li>
-        <a href="#start" title="back to beginning">Frameworks</a>
+        <a tabindex="4" class="pa11y blue" href="#frameworks" title="back to beginning">Frameworks</a>
       </li>
       <li>
-        <a href="#colours" title="colours section">Softwares</a>
+        <a tabindex="5" class="pa11y violet" href="#plugins" title="colours section">Plugins</a>
       </li>
     </ul>
   </nav>
 
-  <section id="about">
+  <section tabindex="6" id="about">
     <div class="container">
       <header>
         <h2>About</h2>
@@ -48,7 +48,7 @@
     </div>
   </section>
 
-  <section id="usage">
+  <section tabindex="7" id="usage">
     <div class="container">
       <header>
         <h2>Usage</h2>
@@ -58,7 +58,7 @@
     </div>
   </section>
 
-  <section id="colours">
+  <section tabindex="8" id="colors">
     <div class="container">
       <header>
         <h2>Default Colors</h2>
@@ -76,7 +76,7 @@
     </div>
   </section>
 
-  <section id="frameworks">
+  <section tabindex="9" id="frameworks">
     <div class="container">
       <header>
         <h2>Frameworks</h2>
@@ -86,15 +86,63 @@
     </div>
   </section>
 
-  <section id="softwares">
+  <section tabindex="10" id="plugins">
     <div class="container">
       <header>
-        <h2>Softwares</h2>
+        <h2>Plugins</h2>
         <p>...</p>
       </header>
       <div class="content"></div>
     </div>
   </section>
 
+  <script>
+    const { hash } = window.location;
+    const { classList: bodyClass } = document.body;
+    const navItems = document.querySelectorAll('nav a');
+
+    navItems.forEach( item => {
+      console.log(item);
+      item.addEventListener( 'click', e => setNewLocation(e) );
+    });
+
+    function scrollToHash(hash) {
+      switch (hash) {
+        case '#about':
+          bodyClass.value = 'pa11y red';
+          break;
+        case '#usage':
+          bodyClass.value = 'pa11y orange';
+          break;
+        case '#colors':
+          bodyClass.value = 'pa11y green';
+          break;
+        case '#frameworks':
+          bodyClass.value = 'pa11y blue';
+          break;
+        case '#plugins':
+          bodyClass.value = 'pa11y violet';
+          break;
+        default:
+          break;
+      }
+      setTimeout( () =>  {
+        document.querySelector(hash).scrollIntoView({
+          behavior: 'smooth',
+          block: 'center'
+        });
+      }, 100);
+    }
+
+    function setNewLocation(event, hash) {
+      event.preventDefault();
+      const newHash = event.target.hash;
+      window.location.hash = newHash;
+      scrollToHash(newHash);
+    }
+
+    if ( hash ) scrollToHash(hash);
+
+  </script>
 </body>
 </html>

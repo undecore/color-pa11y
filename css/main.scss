@@ -7,6 +7,7 @@
 body {
   padding: 2rem;
   transition: background ease-in-out 1s;
+  background-repeat: repeat;
 }
 
 #cover {
@@ -15,10 +16,9 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  border: .25rem solid black;
+  border: .25rem solid $pa11y-body-text-color;
   margin-bottom: -.25rem;
-  @extend .pa11y;
-  @extend .yellow;
+  background: white;
 
   figure, header {
     width: 50%;
@@ -37,6 +37,7 @@ body {
   header {
     flex-direction: column;
     min-width: 50%;
+    margin-bottom: 2rem;
   }
 
   h1 {
@@ -50,16 +51,24 @@ body {
     flex-direction: column;
     text-align: center;
 
+    figure, header {
+      width: 100%
+    }
+
     img {
       width: 100%;
       margin-bottom: 2rem;
-      transform: translateX(-1.5rem);
+      transform: translateX(1rem);
+    }
+
+    h2 {
+      max-width: 100%
     }
   }
 
 }
 
-#colours {
+#colors {
 
   .rainbow {
     display: flex;
@@ -93,7 +102,7 @@ body {
   height: 10vh;
   min-height: 6.4rem;
   text-align: center;
-  border: .25rem solid black;
+  border: .25rem solid $pa11y-body-text-color;
   margin-bottom: 2rem;
 
   ul {
@@ -125,7 +134,15 @@ body {
     align-items: center;
     justify-content: center;
     padding: 1rem 2rem;
-    color: black;
-    border-right: .25rem solid black
+    color: $pa11y-body-text-color;
+    border-right: .25rem solid $pa11y-body-text-color;
+
+    &:hover {
+      background-image: unset;
+    }
+
+    &:focus, &:hover, &:active {
+      box-shadow: 0 .5rem 0rem $pa11y-body-text-color;
+    }
   }
 }

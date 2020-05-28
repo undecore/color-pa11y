@@ -3,35 +3,40 @@
 
 .pa11y {
 
-  background-size: $pa11y-pttrn-size !important;
-
-  &.red {
+  &-red, &.red {
     background: $pa11y-red-pttrn;
     background-color: $pa11y-red;
+    background-size: $pa11y-pttrn-size;
   }
-  &.orange {
+  &-orange, &.orange {
     background: $pa11y-orange-pttrn;
     background-color: $pa11y-orange;
+    background-size: $pa11y-pttrn-size;
   }
-  &.yellow {
+  &-yellow, &.yellow {
     background: $pa11y-yellow-pttrn;
     background-color: $pa11y-yellow;
+    background-size: $pa11y-pttrn-size;
   }
-  &.green {
+  &-green, &.green {
     background: $pa11y-green-pttrn;
     background-color: $pa11y-green;
+    background-size: $pa11y-pttrn-size;
   }
-  &.blue {
+  &-blue, &.blue {
     background: $pa11y-blue-pttrn;
     background-color: $pa11y-blue;
+    background-size: $pa11y-pttrn-size;
   }
-  &.purple {
+  &-purple, &.purple {
     background: $pa11y-purple-pttrn;
     background-color: $pa11y-purple;
+    background-size: $pa11y-pttrn-size;
   }
-  &.violet {
+  &-violet, &.violet {
     background: $pa11y-violet-pttrn;
     background-color: $pa11y-violet;
+    background-size: $pa11y-pttrn-size;
   }
 
 }

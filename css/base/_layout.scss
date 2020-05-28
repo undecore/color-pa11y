@@ -4,7 +4,10 @@ body > section {
   flex-direction: column;
   place-content: center;
   border: .25rem solid $pa11y-body-text-color;
-  margin-bottom: 2rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  background-color: $pa11y-body-background;
+  min-height: 90vh;
 }
 
 .container {
@@ -18,10 +21,3 @@ body > section {
   }
 
 }
-
-// @media (prefers-color-scheme: dark) {
-//   body {
-//     color: $pa11y-body-background;
-//     background-color: $pa11y-body-text-color;
-//   }
-// }
