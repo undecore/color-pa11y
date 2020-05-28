@@ -1,2 +1,3 @@
-# colorblind-pa11y
-A color blindness friendly palette with a11y patterns.
+# color-pa11y
+
+A color blindness friendly CSS color palette library with a11y patterns.
