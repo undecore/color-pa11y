@@ -1,9 +1,9 @@
+|:------------------:|
+|![color-pa11y][logo]|
 
-![color-pa11y][logo]
 
-
-# colorblind-pa11y
+# color-pa11y
 A color blindness friendly palette with a11y patterns.
 
 
-[logo]: https://raw.githubusercontent.com/undecore/color-pa11y/master/assets/pa11y.svg?token=AABZUJ7GIBXNSUJSE6T7LCS62AIK2
+[logo]: https://undeco.re/color-pa11y/assets/pa11y.svg
