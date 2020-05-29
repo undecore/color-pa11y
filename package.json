@@ -6,7 +6,7 @@
   "scripts": {
     "watch": "sass --style=expanded --watch ./css/main.scss:./css/main.css",
     "compile": "echo \"compiling sass...\" && sass --style=compressed ./css/main.scss:./css/main.css",
-    "dev": "lite-server && npm run watch"
+    "deploy": "echo \"compiling sass...\" && sass --style=compressed ./css/pa11y.scss:./css/pa11y.css"
   },
   "repository": {
     "type": "git",
