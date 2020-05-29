@@ -4,10 +4,11 @@ body > section {
   flex-direction: column;
   place-content: center;
   border: .25rem solid $pa11y-body-text-color;
-  margin-top: 1rem;
-  margin-bottom: 1rem;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
   background-color: $pa11y-body-background;
   min-height: 90vh;
+  padding: 4rem 0;
 }
 
 .container {
@@ -20,4 +21,10 @@ body > section {
     margin: 2rem 0;
   }
 
+}
+
+.content {
+  h3 {
+    margin: 2em 0 1em 0;
+  }
 }

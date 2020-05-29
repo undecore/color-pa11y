@@ -1,24 +1,62 @@
 @import './pa11y.scss';
-
 @import './base/reset';
 @import './base/text';
 @import './base/layout';
 
 body {
-  padding: 2rem;
+  padding: 0 2rem;
   transition: background ease-in-out 1s;
   background-repeat: repeat;
+
+  &.red {
+    & > section { background-color: $pa11y-red; }
+  }
+  &.orange {
+    & > section { background-color: $pa11y-orange; }
+  }
+  &.yellow {
+    & > section { background-color: $pa11y-yellow; }
+  }
+  &.green {
+    & > section { background-color: $pa11y-green; }
+  }
+  &.blue {
+    & > section { background-color: $pa11y-blue; }
+  }
+  &.purple {
+    & > section { background-color: $pa11y-purple; }
+  }
+  &.violet {
+    & > section { background-color: $pa11y-violet; }
+  }
 }
+
+section {
+  background-image: unset;
+  font-size: 1.25em;
+  transition: background 1.24s ease-in-out;
+
+  header {
+    h2 {
+      font-family: 'Fredoka One', helvetica arial, sans-serif;
+    }
+  }
+
+  .content {
+    pre,code {
+      display: block;
+      margin: 1.5rem 0;
+    }
+  }
+}
+
 
 #cover {
   width: 100%;
   min-height: 80vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border: .25rem solid $pa11y-body-text-color;
-  margin-bottom: -.25rem;
-  background: white;
+  flex-direction: row;
+  font-size: 1rem;
+  user-select: none;
 
   figure, header {
     width: 50%;
@@ -38,14 +76,28 @@ body {
     flex-direction: column;
     min-width: 50%;
     margin-bottom: 2rem;
+    padding: 0 2rem;
+  }
+
+  h1, h2 {
+    max-width: 23rem;
   }
 
   h1 {
+
+    strong { display: block; }
+
     text-transform: capitalize;
     display: block;
   }
 
-  h2 { max-width: 32rem }
+  h2 {
+    font-family: "Red Hat Text", sans-serif;
+  }
+
+  a {
+    color: $pa11y-body-text-color;
+  }
 
   @media screen and ( max-width: 46rem) {
     flex-direction: column;
@@ -89,10 +141,24 @@ body {
       position: relative;
 
       pre {
+        font-size: .8rem;
         position: absolute;
-        bottom: -2rem;
+        bottom: -4rem;
+        padding: .3em .5em;
       }
 
+    }
+
+    @media screen and ( max-width: 46rem) {
+      flex-direction: column;
+      width: 6.5rem;
+
+      & > .pa11y {
+        pre {
+          bottom: 0;
+          left: 7rem;
+        }
+      }
     }
 
   }

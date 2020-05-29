@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&family=Red+Hat+Text:ital,wght@0,700;1,500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@600&family=Fredoka+One&family=Red+Hat+Text:wght@400;700&display=swap');
 
 body {
   font: normal 15px/1.5em 'Red Hat text', helvetica arial, sans-serif;
@@ -6,6 +6,7 @@ body {
 
 h1, h2, h3, h4, h5, h6 {
   line-height: 1.25em;
+  margin-bottom: 1.25em;
 }
 
 h1 {
@@ -21,17 +22,35 @@ h2 {
   font-size: 2em;
 }
 
+p {
+  line-height: 1.5em;
+  margin-bottom: 1.5em;
+  max-width: 40rem;
+}
+
 a {
   text-decoration: none;
 }
 
+pre, code, .pre, .code {
+  font-size: 1rem;
+  font-family: 'Fira Code', monospace;
+  display: inline-block;
+  background: rgba(0,0,0,.1);
+  padding: .5rem 1rem;
+  border-radius: .5rem;
+}
 
-section {
-   header {
-    font-size: 1.25rem;
-    h2 {
-      font-family: 'Fredoka One', helvetica arial, sans-serif;
-    }
-    p { font-weight: normal;}
-  }
+.pre, .code {
+  font-size: 1rem;
+  padding: .3rem .6rem;
+  margin: 0 .3rem;
+}
+
+
+hr {
+  display: block;
+  border: none;
+  border-bottom: .2rem solid $pa11y-body-text-color;
+  margin: 2rem 0;
 }
