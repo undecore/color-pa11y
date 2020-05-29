@@ -22,7 +22,7 @@ To make color-pa11y available in your project, you just need to include the pa11
 
 You can install it by npm / pnpm / yarn or CDN:
 
-`npm i color-pa11y``
+`npm i color-pa11y`
 
 or
 
