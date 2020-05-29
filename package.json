@@ -1,5 +1,5 @@
 {
-  "name": "colorblind-pa11y",
+  "name": "color-pa11y",
   "version": "1.0.0",
   "description": "A color blindness friendly CSS library with a11y patterns.",
   "main": "src/index.js",
